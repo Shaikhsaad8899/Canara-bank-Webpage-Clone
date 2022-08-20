@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="sidebar">
+                <div class="text">
+                    <ul>
+                        <li>
+                            <a href="#" class="newcustomer-btn">New Customer</a>
+                            <span class="fa fa-caret-down"></span>
+                            <ul class="newcustomer-show">
+                                <li>
+                                    <a href="#" class="buyonline-btn">Buy Online</a>
+                                    <span class="fa fa-caret-down"></span>
+
+                                    <ul class="buyonline-show">
+                                        <li>
+                                            <a href="#" class="allplans-btn">All Plans</a>
+                                            <span class="fa fa-caret-down"></span>
+
+                                            <ul class="allplans-show">
+                                                <li> <a href="#">Online Plans</a>
+                                                </li>
+                                                <li><a href="#">Traditional Plans</a>
+                                                </li>
+                                                <li><a href="#">ULIP Plans</a>
+                                                </li>
+                                                <li> <a href="#">For Groups Plans</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Tools & Calculator</a>
+                                            <span class="fa fa-caret-down"></span>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="oldcustomer-btn">Old Customer</a>
+                            <span class="fa fa-caret-down"></span>
+                            <ul class="oldcustomer-show">
+                                <li> <a href="#">Online Plans</a>
+                                </li>
+                                <li><a href="#">Traditional Plans</a>
+                                </li>
+                                <li><a href="#">ULIP Plans</a>
+                                </li>
+                                <li> <a href="#">For Groups Plans</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                            <span class="fa fa-caret-down"></span>
+
+                        </li>
+                        <li>
+                            <a href="#">Media Centre</a>
+                            <span class="fa fa-caret-down"></span>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row" >
+
+                <div class="col pt-2">
+                    <div class="btn"><span class="fa fa-bars"></span></div>
+                </div>
+                <div class="col-xl-4 pt-2">Toll free 180-103-0003 | sms-97790-30003</div>
+                <div class="col-xl-4 pt-2 ">
+                    <div class="row justify-content-center"><button class="login-button">Login</button><button
+                            class="Register-button">Register</button> <span id="searchbtn" class=" fa fa-search"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="navbarfirstrow row justify-content-center">
+                <div class="pt-3 col-md-auto">ABOUT US</div>
+                <div class="pt-3 col-md-auto">MEDIA CENTRE</div>
+                <div class="pt-3 col-md-auto">KNOWLEDGE CENTRE</div>
+                <div class="pt-3 col-md-auto">NRI CENTRE</div>
+                <div class="pt-3 col-md-auto">CAREERS</div>
+                <div class="pt-3 col-md-auto">CONTACT</div>
+            </div>
+            <div class="container" >
+                <div class="parentcustomer row justify-content-center">
+                    <div class=" col-lg-6 justify-content-center">
+                        <div class="bothcustomersbutton row  justify-content-center">
+                            <button class="bothbtns">NEW CUSTOMER</button>
+                        </div>
+                        <div class="bothcustomerdiv row ">
+                            <div class="col-md-4" id="newc"><button class="button-NC" id="newc">BUY ONLINE</button>
+                            </div>
+                            <div class="col-md-3"><button class="button-NC" id="newc">ALL PLANS</button> </div>
+                            <div class="col-md-5"><button class="button-NC" id="newc">TOOLS AND CALCULATOR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bothcustomersbutton row  justify-content-center">
+                            <button class="bothbtns">EXISTING CUSTOMER</button>
+                        </div>
+                        <div class="bothcustomerdiv row  ">
+                            <div class="col-md-4"><button class="button-NC" id="newc">
+                                    FUNDS AND NAV</div>
+                            </button>
+                            <div class="col-md-4" id="newc"><button class="button-NC">MANAGE POLICY</button></div>
+                            <div class="col-md-4" id="newc"><button class="button-NC">CLAIMS</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="termline row justify-content-center" >
+                    <p>The goods & services tax(GST) is applicable with effects from July 1st, 2017. The effective rates
+                        of GST on life ensurance will be 18% for term products and ULIP charges, 4.5%(first year) and
+                        2.25%(subsequent year) for endowment products and 1.8% for single annuity products.</p>
+                </div>
+                <div class="form-div row  ">
+                    <div class="form1 col-xl-5 gx-5 ">
+
+                        <div class="form">
+                            <div class="col">
+                                <div class="row">
+                                    <h5>Get a Call Back</h5>
+                                </div>
+                                <div class="row"><input type="text" placeholder=" Name"></div>
+                                <div class="row"><input type="text" placeholder=" E-mail Address"></div>
+                                <div class="row"><input type="text" placeholder=" Mobile No."></div>
+                                <div class="row"><select name="" id="Looking">
+                                        <option value="">Looking For</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select></div>
+                                <div class="row"><input type="text" placeholder=" Comments..." style="height: 60px;">
+                                </div>
+
+                                <div class="row">
+                                    <div onload="GenerateCaptcha();">
+                                        <div>
+                                            Captcha:
+                                            <input type="text" id="txtCaptcha"
+                                                style="text-align: center; border: none; font-weight: bold;width: 60px ;font-size: 10px; font-family: Modern" />
+                                            <button class="fa fa-refresh" type="button" id="btnrefresh" value=""
+                                                onclick="GenerateCaptcha();"></button>
+                                            <input type="text" id="txtCompare"
+                                                style="text-align: center; border: none; font-weight: bold;width: 60px ;font-size: 10px; font-family: Modern" />
+                                            <br />
+                                            <br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkboxdiv row" style="overflow-wrap: break-word;">
+                                    <p>I agree that even if my contact number is registered with NDNC/NCPR, I would
+                                        still want the Company to contact me on the given number for the
+                                        clarification/product information sought by me.</p>
+                                </div>
+                                <div class="row"><button id="btnValid" type="button" value="Check"
+                                        onclick="alert(ValidCaptcha());">Submit</button></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="secondcolimg col-md-3 " sty><img class="align-middle" src="pngwing.com.png" alt=""
+                            style="width: 300px;"></div>
+                    <div class="thirdcol col-md-4 align-middle">
+                        <div class="row justify-content-center">
+                            <span class="align-middle mt-5" style="width: 255px; top: 30px;">
+                                <h4 style="font-size: 20px ;">Secure your family's future in just a few clicks</h4>
+                                <button class="buyonlinebtn" style="font-weight: 600;">BUY ONLINE</button>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container" id=" all-width">
+                <div class="row Headlines mt-2">
+                    <div class="textline">
+                        <h2>Find out how much life insurance you need</h2>
+                    </div>
+                </div>
+                <div class="rangediv row" style="background-color: orange;">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-2 ">
+                                <div class="row pt-3 justify-content-center">
+                                    <h4>Age</h4>
+                                </div>
+                                <div class="row pt-3 justify-content-center" id="box1">
+                                    <h4>Already insured for</h4>
+                                </div>
+                                <div class="row pt-3 justify-content-center" id="box1">
+                                    <h4>Annual Income</h4>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-md-6" style="display: flex;
+                            flex-wrap: wrap;
+                        ">
+                                <div class="row  ml-3">
+                                    <div class="box">
+                                        <input class="range" type="range" min="18" max="60" value="30"
+                                            oninput="rangeValue.innerText = this.value" />
+                                        <p id="rangeValue">30</p>
+                                    </div>
+                                </div>
+                                <div class="row ml-3">
+                                    <div class="box" id="box1">
+
+                                        <input class="range" type="range" min="10" max="100" value="36"
+                                            oninput="rangeValue2.innerText = this.value" />
+                                        <label for="amount">
+
+                                            <p id="rangeValue2">36</p>
+                                        </label>
+
+
+                                    </div>
+                                </div>
+                                <div class="row ml-3">
+                                    <div class="box" id="box1">
+                                        <input class="range" type="range" min="10" max="100" value="20"
+                                            oninput="rangeValue3.innerText = this.value" />
+                                        <p id="rangeValue3">20</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mx-3 my-1 " style="background-color: white; border-radius: 10px;">
+                                <h5>Your Ideal life insurance cover should be</h5>
+                                <h3>₹ 4,64,00,000</h3>
+                                <button class="buyonlinebtn">GET INSURED NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row Headlines mb-2">
+                    <div class="textline">
+                        <h2>Plan for all Life Stages</h2>
+                    </div>
+                </div>
+                <div class="plansforall row justify-content-center overflow-wrap-wrap">
+                    <div id class="divimage col-xs-3 mr-1 ">
+                        <label class="labelexpanded">
+                            <input class="radio" type="radio" name="2">
+                            <div class="divimg row justify-content-center">
+                                <img src="pngwing.com.png" alt="">
+                                <h4>Freedom & youth</h4>
+                            </div></input>
+                        </label>
+                    </div>
+                    <div class="divimage col-xs-3 mx-1">
+                        <label class="labelexpanded">
+                            <input class="radio" type="radio" name="2">
+                            <div class="divimg row justify-content-center">
+                                <img src="pngwing.com.png" alt="">
+                                <span>
+                                    <h4> Newly Married</h4>
+                                </span>
+                            </div></input>
+                        </label>
+                    </div>
+                    <div class="divimage col-xs-3 mx-1">
+                        <label class="labelexpanded">
+                            <input class="radio" type="radio" name="2">
+                            <div class="divimg row justify-content-center">
+                                <img src="pngwing.com.png" alt="">
+                                <span>
+                                    <h4>Family Bond</h4>
+                                </span>
+                            </div></input>
+                        </label>
+                    </div>
+                    <div class="divimage col-xs-3 ml-1">
+                        <label class="labelexpanded">
+                            <input class="radio" type="radio" name="2">
+                            <div class="divimg row justify-content-center">
+                                <img src="pngwing.com.png" alt="">
+                                <span>
+                                    <h4>Graceful Ageing</h4>
+                                </span>
+                            </div></input>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="row Headlines mb-2">
+                    <div class="row textline">
+                        <h2 class="ml-2">Choose objective</h2><input class="ml-2" type="radio" value="02" name="" id="">
+                        <h4 class=" h4 pt-2 pl-2" style="font-size: 15px;">Managing & Growing Wealth</h4><input
+                            class="ml-2" value="03" type="radio" name="" id="">
+                        <h4 class=" h4 pt-2 pl-2" style="font-size: 15px;">Pure Protection</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+      <section id="slider">
+                  <div class="container">
+                  <div class="subcontainer">
+                     <div class="slider-wrapper">
+                              <div class="controller">
+                        <div id="controls" >
+                                  <button class="previous">
+                                    <i class="fa fa-angle-left"></i>
+                                  </button>
+                                  <button class="next"><i class="fa fa-angle-right"></i></button>
+                                </div>
+                              </div>
+                              <div class="my-slider">
+                                <div class="slide" >
+                                    <div class="cards">
+                                        <div class="card1">
+                                            <h2 style="color: black;">Jeevan Nivesh Plan </h2>
+                                        <p style="color: black;">Plan for the wishes that comes after all plans.</p>
+                                        <button class="buyonlinebtn">KNOW MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="cards">
+                                        <div class="card1">
+                                            <h2 style="color: black;">iSelect term Plan </h2>
+                                        <p style="color: black;">I select the terms of my life</p>
+                                        <button class="buyonlinebtn">KNOW MORE</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                                <div class="slide">
+                                    <div class="cards">
+                                        <div class="card1">
+                                            <h2 style="color: black;">Smart Suraksha Plan</h2>
+                                        <p style="color: black;">Make the smart choice to secure your family's happiness</p>
+                                        <button class="buyonlinebtn">KNOW MORE</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                                <div class="slide">
+                                    <div class="cards">
+                                        <div class="card1">
+                                            <h2 style="color: black;">Pradhan Mantri Jeevan Jyoti Bima Yojna</h2>
+                                        <p style="color: black;">Ensure a secure future for your loved ones</p>
+                                        <button class="buyonlinebtn">KNOW MORE</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                                <div class="slide">
+                                    <div class="cards">
+                                        <div class="card1">
+                                            <h2 style="color: black;">Jeevan Nivesh Plan </h2>
+                                        <p style="color: black;">Plan for the wishes that comes after all plans.</p>
+                                        <button class="buyonlinebtn">KNOW MORE</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                               
+                                  
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>  
+                </div>
+                <div class="container justify-content-center">
+                    <div class="col-md-12">
+                        <div class="footer1 mr-2 row justify-content-center">
+                            <div class="DCrow  col-md-4">
+                                <div class=" row">
+                                    <h4 id="h4text">DOWNLOAD CENTER</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="footertext col-md-5">
+                                        <p>Policy Servicing Forms</p>
+                                        <p>Group Service Request Form</p>
+                                        <p>Claims Forms</p>
+                                        <p>SI Mandate Forms</p>
+                                        <p>Old Products Brouchers</p>
+                                        <p>Underwriting Questioneries</p>
+                                    </div>
+                                    <div class="footertext col-md-5">
+                                        <p>Policy Servicing Forms</p>
+                                        <p>Group Service Request Form</p>
+                                        <p>Claims Forms</p>
+                                        <p>SI Mandate Forms</p>
+                                        <p>Old Products Brouchers</p>
+                                        <p>Underwriting Questioneries</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="verticalline"></div>
+                            <div class="QLrow  col-md-4">
+                                <h4 id="h4text">QUICK LINKS</h4>
+                                <div class="row">
+                                </div>
+                                <div class="QLrow  row">
+                                    <div class="footertext col-md-6">
+                                        <p>Policy Servicing Forms</p>
+                                        <p>Group Service Request Form</p>
+                                        <p>Claims Forms</p>
+                                        <p>SI Mandate Forms</p>
+                                        <p>Old Products Brouchers</p>
+                                        <p>Underwriting Questioneries</p>
+                                    </div>
+                                    <div class="footertext col-md-6">
+                                        <p>Policy Servicing Forms</p>
+                                        <p>Group Service Request Form</p>
+                                        <p>Claims Forms</p>
+                                        <p>SI Mandate Forms</p>
+                                        <p>Old Products Brouchers</p>
+                                        <p>Underwriting Questioneries</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="verticalline"></div>
+                            <div class="Frow col-md-2">
+                                <h4 id="h4text">FAQs</h4>
+                                <div class="row">
+                                </div>
+                                <div class="row">
+                                    <div class="footertext col-md-12">
+                                        <p>Policy Servicing Forms</p>
+                                        <p>Group Service Request Form</p>
+                                        <p>Claims Forms</p>
+                                        <p>SI Mandate Forms</p>
+                                        <p>Old Products Brouchers</p>
+                                        <p>Underwriting Questioneries</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer2  row">
+                            <!-- <div class="row"> -->
+                            <div class="col-md-6">
+                                <div class="pl-2 row justify-content-start" style="text-align: left;">
+                                    <p>Canara HSBC Oriental Bank of Commerce Life insurance Co Ltd
+                                        <br>.www.lifeinscouncil.org | IRDAI Registration no. 136
+                                        www.irda.gov.inWEBNJ2CHONOV15 ENG</p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="row justify-content-end">
+                                    <p style="font-size: 15px; font-weight: 600;"> FOLLOW US AT</p>
+                                </div>
+                                <div class="row justify-content-end">
+                                    <span>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/800px-Facebook_Logo_%282019%29.png"
+                                            alt="" style="width:20px ;"> <img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe104I7luVjxwJz9633Y-WTtqOJP-pf0xCNYhRrKDYIQ&s"
+                                            alt="" style="width:20px ;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"
+                                            alt="" style="width:20px ;">
+                                        <img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png"
+                                            alt="" style="width:20px ;">
+                                    </span></div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                        <div class="footer3 mr-2 row justify-content-center">
+                            <div class="col col-md-12">
+                                <div class="footer33 row justify-content-start  " style="text-align: left;">
+                                    <h5>BEWARE OF SPURIOUS PHONE CALLS AND FICTITIOUS/FRAUDULENT OFFERS
+                                    </h5>
+                                    <h4> &nbsp;> IRDAI clarifies to public that
+                                        <br>&nbsp;> IRDAI or its official do not involve in activities like sale of any
+                                        kind
+                                        of insurance or
+                                        financial products nor invest premiums.
+                                        <br>IRDAI does not announce any bonus.
+                                        <br>Public receiving such phone calls are requested to lodge a police complaint
+                                        along with details of
+                                        phone call, number </h4>
+                                </div>
+                                <div class="footer3row row ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer4 row justify-content-center">
+                            <p>©2017 Canara HSBC Oriental Bank of Commerce Life Insurance Co. Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+            
+
+</html>

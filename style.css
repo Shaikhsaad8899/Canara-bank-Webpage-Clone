@@ -1,0 +1,715 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), #edf1f4); */
+    border-radius: 40px;
+    /* box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),-15px -15px 20px #fff; */
+}
+
+.rangediv {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.Headlines {
+    background-color: rgb(17, 17, 38);
+    color: white;
+    font-size: 05px;
+    padding-left: 05px;
+}
+
+.Headlines h2 {
+    color: white;
+    font-size: 18px;
+    padding: 05px;
+}
+
+.range {
+
+    width: 367px;
+    height: 17px;
+    appearance: none;
+    background: #edf1f4;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px 5px 10px rgb(199, 184, 184),
+        inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.range::-webkit-slider-thumb {
+    appearance: block;
+    width: 30px;
+    height: 30x;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: -407px 0 0 400px #9b8f8f;
+    cursor: pointer;
+}
+
+#slider::-webkit-slider-thumb::before {
+    content: var(--thumbNumber);
+}
+
+#rangeValue {
+    top: 08px;
+    position: relative;
+    text-align: center;
+    width: 60px;
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+    background: #edf1f4;
+    margin-left: 15px;
+    border-radius: 25px;
+}
+
+#rangeValue2 {
+    top: 08px;
+    position: relative;
+    text-align: center;
+    width: 60px;
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+    background: #edf1f4;
+    margin-left: 15px;
+    border-radius: 25px;
+}
+
+#rangeValue3 {
+    top: 08px;
+    position: relative;
+    text-align: center;
+    width: 60px;
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+    background: #edf1f4;
+    margin-left: 15px;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+.body {
+    text-align: center;
+}
+
+.header {
+    text-align: center !important;
+    overflow: hidden;
+}
+
+.button-NC {
+    font-size: 10px;
+
+}
+
+.button-EC {
+    font-size: 10px;
+}
+
+
+#Looking {
+    color: rgb(69, 73, 73);
+    border-radius: 10px;
+    width: 110px;
+    background-color: rgb(255, 255, 255);
+}
+
+#btnrefresh {
+    border-radius: 20px;
+}
+
+#btnValid {
+    border-radius: 25px;
+    width: 70px;
+    color: rgb(0, 0, 0);
+}
+
+.form {
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 5%;
+    padding: 5px;
+    margin-top: 20px;
+    width: max-content;
+    background-color: rgb(17, 17, 38);
+    color: white;
+    margin-right: 25px;
+}
+
+.form-div {
+    background-image: linear-gradient(rgb(122, 115, 115), white);
+    width: 78%vw;
+}
+
+.bothcustomerdiv {
+    background-color: black;
+    height: max-content;
+    align-items: center;
+}
+
+.canaraimg {
+    top: 25px;
+    align-items: center;
+}
+
+/* All button CSS here */
+.login-button {
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+    padding: 2px;
+    background-color: rgb(17, 17, 38);
+    ;
+    border: 2px solid rgba(80, 76, 76, 0);
+    color: white;
+}
+
+.Register-button {
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
+    padding: 2px;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    border: 2px solid rgb(181, 124, 18);
+
+}
+
+#searchbtn {
+    font-size: 25px;
+    border: 2px solid rgb(80, 76, 76);
+    border-radius: 18px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 4px;
+}
+
+.bothbtns {
+    border-radius: 18px;
+    padding: 5px;
+    background-color: rgb(17, 17, 38);
+    color: white;
+    border: 2px solid rgb(255, 166, 0);
+}
+
+.button-NC {
+    border-radius: 18px;
+    padding: 5px;
+    background-color: rgb(198, 132, 11);
+    font-weight: 600;
+    color: rgb(41, 26, 11);
+    border: 2px solid rgb(61, 46, 20);
+    margin: 05px;
+}
+
+.buyonlinebtn {
+    border-radius: 18px;
+    padding: 5px;
+    background-color: rgb(255, 166, 0);
+    color: rgb(17, 17, 38);
+    width: 200px;
+    border: 2px solid rgba(61, 46, 20, 0.51);
+    margin: 05px;
+}
+
+
+.form .col .row {
+    padding: 5px;
+}
+
+.parentcustomer1,
+#sidebarbtn {
+    display: none;
+}
+
+.form .col .row input {
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: none;
+    border: 1px solid rgb(17, 17, 38);
+}
+
+.thirdcol {
+    position: relative;
+    align-items: center;
+
+}
+
+.secondcol {
+    position: relative;
+    align-items: center;
+}
+
+.secondcolimg {
+    position: relative;
+    align-items: center;
+}
+
+.checkboxdiv {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 12px;
+    width: 290px;
+    overflow-wrap: break-word;
+
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    width: max-content;
+    height: max-content;
+    float: right;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.841);
+}
+
+.btn {
+    display: none;
+}
+
+.divimage {
+    display: block;
+    width: 182px;
+    border: 3px solid rgb(255, 166, 0);
+    height: 168px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.divimage h4 {
+    padding-top: 5px;
+}
+
+.labelexpanded>input {
+    display: none;
+
+}
+
+.labelexpanded input:checked+.divimg {
+    background-color: rgb(255, 166, 0);
+}
+
+.divimage img {
+    position: relative;
+    width: 165px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.divimg {
+    background-color: rgba(255, 254, 254, 0);
+}
+
+.divimage h4 {
+    font-size: 15px;
+}
+
+.divimage input {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.plansforall {
+    text-align: center;
+    justify-content: center;
+}
+
+.footertext {
+    font-size: 10px;
+    text-align: start;
+}
+
+#h4text {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.verticalline {
+    width: 1px;
+    margin-top: 40px;
+    height: 150px;
+    color: white;
+    background-color: rgb(93, 86, 86);
+}
+
+.footer1 {
+    background-color: rgb(6, 6, 41);
+    color: rgb(147, 141, 141);
+}
+
+.footer2 {}
+
+.footer3 {
+    background-color: rgb(151, 151, 139);
+    overflow: hidden;
+}
+
+.footer3row h5 {
+    font-weight: 700;
+    font-size: 15px;
+    /* height: max-content; */
+}
+
+.footer33 h4 {
+    font-weight: 300;
+    font-size: 14px;
+    /* height: max-content; */
+}
+
+.footer33 {
+    margin: 10px;
+    width: 100%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@,100;0,300;0,400;0,500;1,100;1;300,400&display=swap');
+
+
+#slider {
+    margin-top: 05px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    height: 336px;
+    border: 2px solid rgb(196, 132, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(94, 75, 75, 0);
+}
+
+.container {
+    width: 95vw;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.subcontainer {
+    width: 85%;
+    /* margin: auto; */
+}
+
+.controller {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls {
+    z-index: 20;
+
+
+}
+
+.my-slider {
+    display: flex;
+    width: 2500px;
+    margin-bottom: 10px;
+}
+
+.subcontainer {
+    margin-left: 70px;
+}
+
+#controls i {
+    z-index: 20;
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+  
+}
+
+.previous {
+    position: relative;
+    top: 130px;
+    right: 60px;
+    padding: 2px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.7s ease-in-out;  background-color: white;
+    border: none;
+}
+
+.next {
+    position: relative;
+    top: 190px;
+    right: 110px;
+    padding: 2px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;  background-color: white;
+    border: none;
+    transition: 0.7s ease-in-out;
+}
+
+.cards {
+    width: 230px;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid rgb(220, 135, 51);
+    border-radius: 20px;
+}
+
+.card1 {
+    margin: 5px;
+    padding: 05px;
+    width: 190px;
+}
+
+@media only screen and (max-width:992px) {
+    .form1 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:770px) {
+
+    .footer1 {
+        display: none;
+    }
+
+    .footer2 {
+        display: none;
+    }
+
+    .footer3 {
+        display: none;
+    }
+
+    .form1 {
+        display: none;
+    }
+
+    .navbarfirstrow {
+        display: none;
+    }
+
+    .bothcustomersbutton {
+        display: none;
+    }
+
+    .bothcustomerdiv {
+        display: none;
+    }
+
+    #box1 {
+        display: none;
+    }
+
+    .form-div {
+        background-image: linear-gradient(rgb(122, 115, 115), white);
+        /* width:max-content;*/
+
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+        position: fixed;
+        width: 90vw;
+        top: 5px;
+        /* left: -255px; */
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        height: max-content;
+        float: right;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.881);
+    }
+
+    .sidebar.show {
+        display: block;
+        position: fixed;
+        width: 180px;
+        top: 5px;
+        /* left: 0px; */
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        height: max-content;
+        float: right;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.881);
+    }
+
+    .sidebar .text {
+        color: rgb(255, 255, 255) !important;
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    .text a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .text a:hover {
+        color: rgb(19, 137, 158);
+        text-decoration: none;
+    }
+
+    .sidebar ul {
+        background-color: rgba(0, 0, 0, 0);
+        height: max-content;
+        width: max-content;
+        list-style: none;
+    }
+
+    .sidebar ul li a span {
+        position: absolute;
+        top: 80%;
+    }
+
+    .sidebar ul {
+        /* line-height: 50px; */
+        margin-left: 05px;
+        display: block;
+    }
+
+    .sidebar ul .newcustomer-show {
+        display: none;
+        position: static;
+        margin-left: 02px;
+    }
+
+    .sidebar ul .newcustomer-show.show {
+        position: static;
+        display: block;
+        margin-left: 02px;
+    }
+
+    .sidebar ul ul {
+        display: none;
+        position: static;
+        margin-left: 02px;
+    }
+
+    .sidebar ul .oldcustomer-show.show {
+        position: static;
+        display: block;
+        margin-left: 02px;
+    }
+
+    .sidebar ul ul ul {
+        display: none;
+        line-height: 35px;
+        margin-left: 02px;
+    }
+
+    .sidebar ul ul .buyonline-show.show {
+        display: block;
+        line-height: 35px;
+        margin-left: 02px;
+    }
+
+    .sidebar ul ul ul ul {
+        display: none;
+        line-height: 25px;
+        margin-left: 2px;
+    }
+
+    .sidebar ul ul ul .allplans-show.show {
+        display: block;
+        line-height: 25px;
+        margin-left: 2px;
+    }
+
+    .sidebar ul ul ul ul li {
+        line-height: 20px;
+
+    }
+
+    .sidebar ul li a span {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+
+    .btn {
+        display: block;
+        position: relative;
+        /* left: ; */
+        top: 0px;
+        width: 45px;
+        text-align: center;
+        background-color: #ffffff00;
+        cursor: pointer;
+        color: rgb(98, 87, 87);
+        /* transition: 2s ease; */
+    }
+
+    .btn.click {
+        left: 139px;
+        z-index: 20;
+    }
+
+
+
+    .btn span {
+        font-size: 20px;
+        color: rgb(2, 2, 2);
+    }
+
+    .btn.click span::before {
+        content: '\f00d';
+        color: white;
+        border-radius: 45px;
+    }
+
+
+
+}
+
+@media (max-width: 578px) {
+
+    .termline {
+        font-size: 01rem;
+        width: 95vw;
+    }
+}
+
+/* 
+@media(max-width:1600px) {
+    .container {
+        width: max-content;
+        
+    }
+    .controller {
+       display: flex;
+       justify-content: space-between;
+   }
+   .controls{
+      z-index: 20;
+         
+   }
+} */
